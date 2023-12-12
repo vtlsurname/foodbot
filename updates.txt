@@ -1,0 +1,114 @@
+28.02.2023:
+    -added: now admin can add/delete user from black list (stable)
+    -improved: user order preview for admin (now admin can see user phone)
+    -improved: changed the pay_offline file, if the user does not have a phone, the bot asks to add it
+    -improved: delete administrator, now an id to delete has to click: yes, I definitely want to delete
+    -added: now admin can make newsletter only with text
+    -improved: now admin can make newsletter with photo
+    -added: ow the blacklist really works
+    -improved: now chef when click on user order can see admin note
+
+27.02.2023:
+    -added: now admin can accept user order (bot send message to user that his order was accepted)
+    -reworked: when admin cencel his order, bot send message that his order was cenceled
+    -reworked: admin_changes, some have been translated into Ukrainian
+    -reworked: now the admin id is taken from the database and not from the cfg.py file
+    -reworked: admin_accept_order, has been translated from rusian to Ukrainian
+    -reworked: pay_offline, If a user has placed an order the administrator receives a message
+    -ADDED: NOW CHEF CAN MAKE A ORDER!!!!
+
+25.02.2023:
+    -fixed/reworked: save_order_to_dp func
+    -full reworked: pay_offline file
+    -fixed/improved: pay admin acception offline order (now user can cencel order(stable))
+    -reworked: admin/chefs_changes file, some words was translated on ukranian
+
+24.02.2023:
+    -when user write "Замовлення" bot sending message with inline-buttons, 
+    when user click on button, bot edit message, and write order: user_id and dishes: dish1, dish2...
+
+22.02.2023:
+    -improved: system how admin delete admin (stable)
+    -some bug fixes & improves code
+    -added: now admin can add new chef
+    -added: now admin can delete chef
+    -fixed: file change_description (fixed text in the flie)
+
+21.02.2023:
+    -added: now user can get his id using /myid command
+    -added: now admin can add new admin
+    -added: now admin can delete admin (beta)
+
+20.02.2023:
+    -reworked: user can pay ofline or online
+
+17.02.2023:
+	-added: now admin can change dish description
+
+15.02.2023:
+	-reworked: when admin adding new dish, he must write a description
+	-reworked: basket message (now basket message seeing like this: cola 0.5 X2)
+
+14.02.2023:
+	-reworked: add to basket func (now func take food name from button)
+	-reworked: dish preview message (now in dish message customer can see: name, description, price)
+	-reworked: change price dispather(for admins)
+
+13.02.2023:
+	-added: now admin can change dish price
+
+12.02.2023:
+	-added: now admin can update dish photo or if dish wasn't have photo, now you can add photo
+
+10.02.2023:
+	-improved: when admin delete dish, photo also deleting
+
+09.02.2023:
+	-fixed send dish preview func(now if dish have photo or without, anywhere all work and you can add dish in basket)
+
+29.12.2022:
+    -reworked add new dish func (for add new dish you need send photo or write cencel)
+
+27.12.2022:
+    -added work with base func for admins
+    -added new menu for base
+    -reworked inline user menu (added emoji on buttons)
+    -added new menu for user "profile menu"
+    -added handlers for this menu
+    -added change phone func for any users in profile settings
+
+26.12.2022:
+    -added statistic func for admins
+    -fixed bug with basket, when user was have dish and after admin delete this dish,
+        when user called basket, bot crashed
+    -fixed user was shown a menu for the purchase even if he didn't have dishes in order (basket)
+    -some fixes & improves
+
+25.12.2022:
+    -reworker add new dish func, now admin can cancel
+    -added delete dish func
+    -added new boards for this func
+    -fixed: if admin in dish_price writing not int, action is finish
+    -some improves & bug fixes
+    -added "add new categori" func for admin & new board for this
+
+24.12.2022:
+    -reworked admin menu
+    -added new func "add new dish"
+
+23.12.2022:
+    -reworked basket handlers, now - old messages are edited and new ones are not sent
+    -full reworked menu:
+        delete simple menu 
+        now users have only inline menu
+    -reworked inline menus
+    -reworked basket, dishes handlers
+    -added back_in_main_menu handler and buttons in menu
+
+22.12.2022:
+    -Added basket!
+    -Added basket system
+    -Added new keyboard for basket
+    -Added payment handler & payment
+    -Added "remove dish from basket" func
+    -Some bug fixes & improves
